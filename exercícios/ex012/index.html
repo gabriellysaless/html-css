@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos</h1>
+    <h2>Vídeos hospedados localmente</h2>
+    <p>Este vídeo está hospedado no meu servidor, consumindo do próprio serviço de hospedagem.</p>
+    <video width="560" controls poster="imagens/limoes-capa.png" loop>
+        <source src="videos/video-limao.mp4" type="video/mp4">
+        <source src="videos/video-limao.m4v.m4v" type="video/mp4">
+        <source src="videos/video-limao.webm.webm" type="video/webm">
+        <source src="videos/video-limao.ogv.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+
+    <h2>Vídeos hospedados no YouTube</h2>
+    <p>Este vídeo está hospedado no YouTube, consumindo do serviço do YouTube.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=ogQXoRWINNbM4_Y4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h2>Vídeos hospedados no Vimeo</h2>
+    <p>Este vídeo está hospedado no Vimeo, consumindo do serviço do próprio Vimeo.</p>
+    <iframe src="https://player.vimeo.com/video/29844795?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Animation Reel"></iframe>
+</body>
+</html>
