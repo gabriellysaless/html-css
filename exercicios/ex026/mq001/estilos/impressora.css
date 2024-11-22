@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/* ESTILO PARA IMPRESSÃO */
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+html{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+menu{
+    display: none;
+}
+
+/*
+    Se quiser colocar alguma frase após o artigo:
+    article::after{content: 'Escreve o que precisar';} 
+*/
