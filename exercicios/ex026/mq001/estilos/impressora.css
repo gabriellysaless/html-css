@@ -17,6 +17,11 @@ menu{
     display: none;
 }
 
+article{
+    width: 100%;
+    text-align: justify;
+}
+
 /*
     Se quiser colocar alguma frase após o artigo:
     article::after{content: 'Escreve o que precisar';} 
