@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container{
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item{
+            background-color: lightblue;
+            border: 1px solid rgb(0, 0, 163);
+            text-align: center;
+            padding: 10px;
+
+            flex-basis: 100px;
+            /* flex-basis:
+                auto ou um valor em px, por exemplo.
+            */
+        }
+
+        div#i1{
+            flex-basis: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1">A</div>
+        <div class="item">Outro conteúdo</div>
+        <div class="item">C</div>
+        <div class="item">Aqui um outro conteúdo maior</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">E por último, um conteúdo maior do que os anteriores</div>
+    </div>
+</body>
+</html>
