@@ -18,13 +18,29 @@
             flex-basis: 200px;
             padding: 20px;
         }
+
+        div#itA{
+            flex-shrink: 3;
+            flex-grow: 0;
+        }
+
+        div#itB{
+            flex-shrink: 8;
+            flex-grow: 0;
+        }
+
+        div#itC{
+            flex-shrink: 2;
+            flex-grow: 0;
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
+        <div class="item" id="itA">A</div>
+        <div class="item" id="itB">B</div>
+        <div class="item" id="itC">C</div>
     </div>
 </body>
 </html>
