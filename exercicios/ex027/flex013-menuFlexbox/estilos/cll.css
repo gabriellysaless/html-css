@@ -5,8 +5,17 @@ header, header > nav {
     
 }
 
+header {
+    padding-bottom: 0px;
+}
+
 header > h1 {
     flex-basis: 50px;
+}
+
+header > span#burguer {
+    display: block;
+    text-align: center;
 }
 
 header > nav > a {
@@ -16,3 +25,22 @@ header > nav > a {
 main {
     margin: 10px;
 }
+
+span#burguer {
+    background-color: rgb(73, 73, 73);
+    padding: 10px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    width: 100vw;
+}
+
+span#burguer:hover{
+    background-color: white;
+    color: black;
+}
+
+header > nav {
+    display: none;
+}
+

@@ -33,6 +33,10 @@ header > h1 {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.479);
 }
 
+header > span#burguer {
+    display: none;
+}
+
 header > nav {
     /* border: 1px dotted black; */
     

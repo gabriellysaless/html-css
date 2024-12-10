@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Flexbox</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/cll.css" media="screen and (max-width: 768px)">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
-        <nav>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <nav id="opcoes">
             <a href="#">Opção 1</a>
             <a href="#">Opção 2</a>
             <a href="#">Opção 3</a>
@@ -24,5 +27,23 @@
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus illum accusantium sunt rem iure ipsam animi, aspernatur voluptates. Reprehenderit quod voluptatem, modi omnis blanditiis rem nobis non officiis at eos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repellendus perferendis sunt sequi beatae maxime temporibus nobis totam numquam fugiat. Vel consectetur, tenetur dolor assumenda obcaecati saepe est architecto exercitationem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus tempora excepturi asperiores rem eum est eius vitae voluptates aut pariatur quas labore, inventore eos soluta fugit veniam? Autem, maxime quia.</p>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque ad sapiente, consectetur obcaecati sed veniam ducimus accusamus sunt quos distinctio, aut magni quis inventore nihil optio? Ad, sequi aut. Amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ipsam velit? Doloremque expedita quaerat sunt! Voluptatem eius vitae doloribus reiciendis autem dolorem dolor! Officiis officia labore vero ipsa consequatur. Iste?</p>
     </main>
+
+    <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 768) {
+                opcoes.style.display = 'flex'
+            } else {
+                opcoes.style.display = 'none'
+            }
+        }
+        
+        function clickMenu(){
+            if (opcoes.style.display == 'flex') {
+                opcoes.style.display = 'none'
+            } else {
+                opcoes.style.display = 'flex'
+            }
+        }
+    </script>
 </body>
 </html>
